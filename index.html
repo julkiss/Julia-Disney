@@ -1,0 +1,213 @@
+<html><head><base href="https://disneyplus-clone.example.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disney+ Clone</title>
+<style>
+body {
+    font-family: 'Avenir', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #040714;
+    color: #f9f9f9;
+}
+
+.header {
+    background-color: #040714;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    padding: 40px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #0063e5;
+    color: #f9f9f9;
+    padding: 16px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.content-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+}
+
+.content-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.content-item:hover .overlay {
+    opacity: 1;
+}
+
+.content-item .overlay h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://cnbl-cdn.bamgrid.com/assets/7ecc8bcb60ad77193058d63e321bd21cbac2fc67281dbd9927676ea4a4c83594/original" alt="Disney+ Logo" class="logo">
+        <nav class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#search">Pesquisa</a>
+            <a href="#watchlist">Minha Lista</a>
+            <a href="#originals">Originais</a>
+            <a href="#movies">Filmes</a>
+            <a href="#series">Séries</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <h1>As melhores histórias em um só lugar.</h1>
+            <p>Filmes, séries e originais de Disney, Pixar, Marvel, Star Wars e National Geographic.</p>
+            <a href="#subscribe" class="cta-button">ASSINE AGORA</a>
+        </section>
+
+        <section>
+            <h2 class="section-title">Recomendados para Você</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/p_luca_21670_3c13c611.jpeg" alt="Luca" width="200" height="300">
+                    <div class="overlay">
+                        <h3>Luca</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/p_blackpanther_19754_4ac13f07.jpeg" alt="Pantera Negra" width="200" height="300">
+                    <div class="overlay">
+                        <h3>Pantera Negra</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://replicate.delivery/yhqm/tgoRtPJeNfl6KkruyLsx1fWQtiZ7xYq2xzeQbKFu4h8S0O7NB/out-0.webp" alt="O Mandaloriano" width="200" height="300">
+                    <div class="overlay">
+                        <h3>O Mandaloriano</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://lumiere-a.akamaihd.net/v1/images/p_encanto_homeent_22359_4892ae1c.jpeg" alt="Encanto" width="200" height="300">
+                    <div class="overlay">
+                        <h3>Encanto</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Originais Disney+</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <img src="https://replicate.delivery/yhqm/TemrN40uoRTEWK8eBQejMyZm09qURn7MQYSQDCplgFxKan9mA/out-0.webp" alt="WandaVision" width="200" height="300">
+                    <div class="overlay">
+                        <h3>WandaVision</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://replicate.delivery/yhqm/hZyOncg03GKXBd1RSf9m3UWxHHxGn7vsG70OR8OnvQmi2ZvJA/out-0.webp" alt="O Mundo Segundo Jeff Goldblum" width="200" height="300">
+                    <div class="overlay">
+                        <h3>O Mundo Segundo Jeff Goldblum</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://replicate.delivery/yhqm/I0S42F6XRF41HVfwxQpRKtkTVyyE9varCVcuFyiLn9Lk2ZvJA/out-0.webp" alt="High School Musical: A Série: O Musical" width="200" height="300">
+                    <div class="overlay">
+                        <h3>High School Musical: A Série: O Musical</h3>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <img src="https://replicate.delivery/yhqm/SYfwNe0UtRpVGkzr3SNHldzk5UW4zRbVPoVpEM16YSWGtzemA/out-0.webp" alt="Mighty Ducks: Game Changers" width="200" height="300">
+                    <div class="overlay">
+                        <h3>Mighty Ducks: Game Changers</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Esta funcionalidade não está disponível nesta demonstração.');
+        });
+    });
+
+    const ctaButton = document.querySelector('.cta-button');
+    ctaButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        alert('Obrigado pelo seu interesse! Este é apenas um projeto de demonstração para a escola.');
+    });
+});
+</script>
+
+</body></html>
